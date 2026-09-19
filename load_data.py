@@ -10,6 +10,7 @@ import sqlite3
 import pandas as pd
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+RAW_DATA_DIR = os.path.join(BASE_DIR, "data", "raw")
 DB_PATH = os.path.join(BASE_DIR, "fuzzy_factory.db")
 
 TABLES = {
@@ -96,7 +97,7 @@ def main() -> None:
 
     for table, spec in TABLES.items():
         df = pd.read_csv(
-            os.path.join(BASE_DIR, spec["file"]),
+            os.path.join(RAW_DATA_DIR, spec["file"]),
             dtype=spec["dtypes"],
         )
         for col in spec["dates"]:

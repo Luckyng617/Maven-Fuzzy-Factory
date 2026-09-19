@@ -41,7 +41,7 @@ python3 make_charts.py      # optional: regenerate PNGs
 streamlit run dashboard.py  # opens the dashboard at localhost:8501
 ```
 
-Dataset: download the free [Maven Fuzzy Factory dataset](https://mavenanalytics.io/data-playground) from Maven Analytics and place the 6 CSVs in this folder. The dashboard uses `dashboard_data.db`, a compact session-level extract that keeps filters interactive without shipping the oversized raw event database.
+Dataset: download the free [Maven Fuzzy Factory dataset](https://mavenanalytics.io/data-playground) from Maven Analytics and place the 6 CSVs in `data/raw/`. The dashboard uses `dashboard_data.db`, a compact session-level extract that keeps filters interactive without shipping the oversized raw event database.
 
 ## Key Findings
 
