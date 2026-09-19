@@ -1,0 +1,4 @@
+*.csv
+fuzzy_factory.db
+__pycache__/
+.streamlit/
